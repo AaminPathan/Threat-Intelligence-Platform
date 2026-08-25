@@ -1,0 +1,45 @@
+.app {
+  min-height: 100vh;
+  background: #0b1120;
+  padding: 40px 20px 80px;
+  color: #e5e7eb;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+.app__header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 32px;
+}
+
+.app__header h1 {
+  font-size: 1.9rem;
+  color: #f8fafc;
+  margin-bottom: 8px;
+}
+
+.app__header p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.app__status {
+  text-align: center;
+  margin-top: 20px;
+  color: #94a3b8;
+}
+
+.app__status--error {
+  color: #f87171;
+}
+
+.app__results {
+  max-width: 900px;
+  margin: 32px auto 0;
+}
+
+.app__source-cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}

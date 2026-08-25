@@ -1,0 +1,68 @@
+.risk-summary {
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+}
+
+.risk-summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.risk-summary__indicator {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  word-break: break-all;
+}
+
+.risk-summary__type {
+  font-size: 0.8rem;
+  color: #67e8f9;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.risk-summary__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 8px 20px;
+  min-width: 90px;
+}
+
+.risk-summary__score-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.risk-summary__severity {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.risk-summary__reasons {
+  margin: 16px 0 8px 0;
+  padding-left: 20px;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.risk-summary__methodology {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-style: italic;
+  margin-top: 8px;
+}

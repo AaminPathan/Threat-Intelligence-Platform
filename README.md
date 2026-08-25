@@ -1,29 +1,12 @@
-# Threat Intelligence Platform
+# AI-Powered Threat Intelligence Platform
 
-A minimal foundation for an AI-Powered Threat Intelligence Platform, built with a FastAPI backend and a React (Vite) frontend.
+A full-stack tool for investigating Indicators of Compromise (IOCs) — IPs, domains,
+URLs, and file hashes — by correlating data from multiple threat-intelligence
+sources and generating a deterministic risk score plus an AI-written analyst summary.
 
-## Tech Stack
+## Architecture
 
-- **Backend:** Python, FastAPI
-- **Frontend:** React, Vite
-- **Environment:** Windows development setup
-
-## Getting Started
-
-### Backend
-```
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-Runs at http://localhost:8000
-
-### Frontend
-```
-cd frontend
-npm install
-npm run dev
-```
-Runs at http://localhost:5173
+- **Backend:** Python + FastAPI, async I/O via httpx
+- **Frontend:** React + Vite
+- **Risk scoring:** deterministic Python heuristic (not AI-driven)
+- **AI analyst:** explains already-collected evidence — never invents facts or sets the score
